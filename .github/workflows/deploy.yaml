@@ -42,7 +42,7 @@ jobs:
           STEAM_ID: ${{ secrets.STEAM_ID }}
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
         run: |
-          ./setup-stats.bash
+          bash setup-stats.sh
       - name: Build
         run: |
           npm run build
