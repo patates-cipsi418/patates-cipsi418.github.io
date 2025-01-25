@@ -39,7 +39,7 @@ jobs:
         run: npm install
       - name: Setup stats
         run: |
-          ./setup-stats.sh
+          ./setup-stats.bash
       - name: Build
         run: |
           npm run build
