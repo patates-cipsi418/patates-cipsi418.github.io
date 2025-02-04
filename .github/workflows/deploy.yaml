@@ -41,6 +41,9 @@ jobs:
         env:
           STEAM_ID: ${{ secrets.STEAM_ID }}
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          DISCORD_ID: ${{ secrets.DISCORD_ID }}
+          DISCORD_BOT_KEY: ${{ secrets.DISCORD_BOT_KEY }}
+          GIT_API_KEY: ${{ secrets.GIT_API_KEY }}
         run: |
           bash setup-stats.sh
       - name: Build

@@ -1,8 +1,16 @@
 <script setup lang="ts">
-import steamStats from "@/assets/steam/stats.json";
+import stats from "@/assets/steam/stats.json";
 import steamLogo from "@/assets/steam/logo.png";
 
 import githubLogo from "@/assets/github/logo.png";
+import discordLogo from "@/assets/discord/logo.png";
+
+const steamStats = stats.steam;
+const githubStats = stats.github;
+const githubURL = `https://github.com/${githubStats.login}`;
+const discordStats = stats.discord;
+const discordURL = `https://discord.com/users/${discordStats.id}`;
+const discordAvatar = `https://cdn.discordapp.com/avatars/${discordStats.id}/${discordStats.avatar}`;
 
 const steamGames = steamStats.games
   .filter(
@@ -51,14 +59,15 @@ const steamGames = steamStats.games
           </v-col>
           <v-col cols="12">
             <div class="social custom github">
-              <img class="profile" :src="steamStats.avatarfull" />
+              <img class="profile" :src="githubStats.avatar_url" />
 
               <div class="content">
-                <h2 color="white">{{ steamStats.personaname }}</h2>
-                <div class="round">
-                  <p>{{ steamStats.player_level }}</p>
-                </div>
-                <p>{{ steamStats.game_count }} jeux</p>
+                <h2 color="white">
+                  <a :href="githubURL" target="_blank">
+                    {{ githubStats.login }}
+                  </a>
+                </h2>
+                <p>{{ githubStats.name }}</p>
 
                 <img class="logo" :src="githubLogo" />
               </div>
@@ -74,6 +83,26 @@ const steamGames = steamStats.games
           ></iframe>
         </div>
       </v-col>
+      <v-col cols="12" md="6">
+        <v-row>
+          <v-col cols="12">
+            <div class="social custom discord">
+              <img class="profile" :src="discordAvatar" />
+
+              <div class="content">
+                <h2 color="white">
+                  <a :href="discordURL" target="_blank">
+                    {{ discordStats.username }}
+                  </a>
+                </h2>
+                <p>{{ discordStats.global_name }}</p>
+
+                <img class="logo" :src="discordLogo" />
+              </div>
+            </div>
+          </v-col>
+        </v-row>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -82,11 +111,15 @@ const steamGames = steamStats.games
 .steam {
   background-color: #171a21;
 }
+.discord {
+  background-color: #1e1f22;
+}
 .github {
   background-color: rgb(1, 4, 9);
 }
 
 .steam *,
+.discord *,
 .github * {
   color: white;
 }
@@ -150,8 +183,9 @@ const steamGames = steamStats.games
 }
 
 .profile {
+  margin: 10px;
   border-radius: 8px;
-  height: 100%;
+  height: calc(100% - 2 * 10px);
 }
 
 .embeded,

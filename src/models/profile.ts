@@ -34,5 +34,5 @@ export const profile: Profile = {
   skillGroups: skillGroups,
   implications: implications,
   interests: ["Jeux Vidéo", "Cuisine", "Montage", "Programmation"],
-  languages: ["Français", "Anglais fonctionnel"],
+  languages: ["Français", "Anglais"],
 };
