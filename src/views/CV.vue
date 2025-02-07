@@ -183,7 +183,8 @@ function print() {
 
 .small-side {
   width: 2.8in;
-  background-color: #275879;
+  background-color: #275879 !important;
+  -webkit-print-color-adjust: exact;
 }
 
 .small-side * {
