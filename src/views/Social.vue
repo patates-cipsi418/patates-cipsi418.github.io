@@ -73,18 +73,6 @@ const steamGames = steamStats.games
               </div>
             </div>
           </v-col>
-        </v-row>
-      </v-col>
-      <v-col cols="12" md="6">
-        <div class="social embeded">
-          <iframe
-            src="https://www.instagram.com/turkdenis/embed"
-            frameborder="0"
-          ></iframe>
-        </div>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-row>
           <v-col cols="12">
             <div class="social custom discord">
               <img class="profile" :src="discordAvatar" />
@@ -102,6 +90,14 @@ const steamGames = steamStats.games
             </div>
           </v-col>
         </v-row>
+      </v-col>
+      <v-col cols="12" md="6">
+        <div class="social embeded">
+          <iframe
+            src="https://www.instagram.com/turkdenis/embed"
+            frameborder="0"
+          ></iframe>
+        </div>
       </v-col>
     </v-row>
   </v-container>
