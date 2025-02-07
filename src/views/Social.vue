@@ -17,7 +17,7 @@ const steamGames = steamStats.games
     (game) => game.playtime_forever > 0 && game.name != "Wallpaper Engine"
   )
   .sort((a, b) => b.playtime_forever - a.playtime_forever)
-  .slice(0, 20);
+  .slice(0, 32);
 </script>
 
 <template>
@@ -127,7 +127,7 @@ const steamGames = steamStats.games
   justify-content: space-between;
   overflow: hidden;
   flex-wrap: wrap;
-  height: 32px;
+  height: calc(32px * 2 + 5px + 8px);
 }
 .steam-game img {
   height: 32px;
