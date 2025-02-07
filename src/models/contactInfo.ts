@@ -10,11 +10,6 @@ export interface ContactInfo {
 
 export const contacts: ContactInfo[] = [
   {
-    icon: faPhone,
-    text: "(450) 204 - 5619",
-    link: "tel:+14502045619",
-  },
-  {
     icon: faEnvelope,
     text: "denis.turk.1@ens.etsmtl.ca",
     link: "mailto:denis.turk.1@ens.etsmtl.ca",
