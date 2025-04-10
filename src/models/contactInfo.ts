@@ -1,4 +1,4 @@
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
@@ -21,8 +21,8 @@ export const contacts: ContactInfo[] = [
   },
   {
     icon: faLinkedin,
-    text: "denis-turk-b2a52a239",
-    link: "https://www.linkedin.com/in/denis-turk-b2a52a239/",
+    text: "denisturk",
+    link: "https://www.linkedin.com/in/denisturk",
   },
   {
     icon: faGithub,
