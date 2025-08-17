@@ -162,7 +162,6 @@ function print() {
 <style scoped>
 @media print {
   .paper {
-    width: 8.5in;
     height: 11in;
     margin: 0;
     padding: 0;
@@ -189,6 +188,7 @@ function print() {
 }
 
 .paper {
+  width: 8.5in;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -204,7 +204,6 @@ function print() {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0.7cm 1cm;
 }
 
 .paper hr {
@@ -222,6 +221,7 @@ function print() {
   background-color: #275879 !important;
   min-width: 2.8in;
   max-width: 50%;
+  padding: 0.7cm 1cm 0.7cm 0.7cm;
 }
 
 .small-side * {
@@ -230,6 +230,10 @@ function print() {
 
 .small-side hr {
   background-color: white;
+}
+
+.large-side {
+  padding: 0.7cm 0.7cm 0.7cm 1cm;
 }
 
 .large-side * {
