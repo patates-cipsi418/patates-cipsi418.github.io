@@ -24,15 +24,9 @@ import NavBar from "@/components/NavBar.vue";
   }
 
   header + hr,
-  header,
-  main > *:not(.paper) {
+  header {
     display: none !important;
   }
-}
-
-.paper {
-  width: 8.5in;
-  height: 11in;
 }
 
 body {

@@ -26,10 +26,11 @@ export const profile: Profile = {
   schools: schools,
   personalSkills: [
     "Autonomie / Adaptation",
-    "Travail en équipe",
+    "Communication",
     "Créativité",
     "Esprit critique",
-    "Service clients",
+    "Résolution de problèmes",
+    "Travail en équipe",
   ],
   skillGroups: skillGroups,
   implications: implications,

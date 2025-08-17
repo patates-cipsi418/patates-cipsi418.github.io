@@ -6,7 +6,14 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     name: "Langage de conception/programmation",
-    skills: ["HTML / CSS", "JavaScript", "Java", "C#", "SQL", "C++"],
+    skills: [
+      "HTML / CSS",
+      "JavaScript, TypeScript",
+      "C#, C++",
+      "Java",
+      "SQL",
+      "Python",
+    ],
   },
   {
     name: "Framework",
@@ -22,7 +29,8 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       "Visual Studio 2019, 2022",
       "Visual Studio Code",
-      "ROS",
+      "ROS, Gazebo",
+      "Godot Engine",
       "IntelliJ IDEA",
       "Android Studio",
     ],

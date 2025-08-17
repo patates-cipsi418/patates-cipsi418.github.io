@@ -17,7 +17,7 @@ const steamGames = steamStats.games
     (game) => game.playtime_forever > 0 && game.name != "Wallpaper Engine"
   )
   .sort((a, b) => b.playtime_forever - a.playtime_forever)
-  .slice(0, 20);
+  .slice(0, 40);
 </script>
 
 <template>
@@ -73,18 +73,6 @@ const steamGames = steamStats.games
               </div>
             </div>
           </v-col>
-        </v-row>
-      </v-col>
-      <v-col cols="12" md="6">
-        <div class="social embeded">
-          <iframe
-            src="https://www.instagram.com/turkdenis/embed"
-            frameborder="0"
-          ></iframe>
-        </div>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-row>
           <v-col cols="12">
             <div class="social custom discord">
               <img class="profile" :src="discordAvatar" />
@@ -102,6 +90,14 @@ const steamGames = steamStats.games
             </div>
           </v-col>
         </v-row>
+      </v-col>
+      <v-col cols="12" md="6">
+        <div class="social embeded">
+          <iframe
+            src="https://www.instagram.com/turkdenis/embed"
+            frameborder="0"
+          ></iframe>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -131,7 +127,7 @@ const steamGames = steamStats.games
   justify-content: space-between;
   overflow: hidden;
   flex-wrap: wrap;
-  height: 32px;
+  height: calc(32px * 2 + 5px + 8px);
 }
 .steam-game img {
   height: 32px;
