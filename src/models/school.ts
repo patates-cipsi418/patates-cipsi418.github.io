@@ -26,6 +26,7 @@ export const schools: School[] = [
     tasks: [
       { title: "Club Capra - Robotique", link: "https://clubcapra.com" },
       { title: "CQI - Programmation", link: "https://cqi-qec.qc.ca" },
+      { title: "CS Games 2025", link: "https://csgames.org" },
       { title: "Comité d'intégration 2024, 2025" },
     ],
   },

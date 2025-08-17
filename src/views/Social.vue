@@ -17,7 +17,7 @@ const steamGames = steamStats.games
     (game) => game.playtime_forever > 0 && game.name != "Wallpaper Engine"
   )
   .sort((a, b) => b.playtime_forever - a.playtime_forever)
-  .slice(0, 32);
+  .slice(0, 40);
 </script>
 
 <template>
