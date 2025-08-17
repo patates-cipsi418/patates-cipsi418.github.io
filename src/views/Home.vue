@@ -5,7 +5,7 @@ import { projects } from "@/models/projects";
 <template>
   <v-container>
     <h1>Projets</h1>
-    <p>Voici quelques projets que j'ai réalisé</p>
+    <p>Voici quelques projets que j'ai réalisé (page en construction)</p>
     <v-row>
       <v-col cols="12" md="6" v-for="(project, p) in projects" :key="p">
         <div class="social custom">
