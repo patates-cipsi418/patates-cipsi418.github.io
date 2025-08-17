@@ -10,7 +10,7 @@ export const projects: Project[] = [
     name: "Portfolio",
     description:
       "Site web personnel pour présenter mes compétences et mes projets.",
-    technologies: ["TypeScript", "React", "SCSS"],
+    technologies: ["TypeScript", "Vue"],
     link: "",
   },
   {
@@ -39,8 +39,20 @@ export const projects: Project[] = [
     contribution: [
       "Intégration du contrôle de moteur.",
       "Intégration de différents capteurs (lidar, IMU, GPS).",
+      "Intégration du roaming réseau.",
+      "Intégration et visualisation des caméras.",
+      "Exportation de la cartographie 3D.",
     ],
-    technologies: ["Python", "C++", "ROS", "Nav2", "Gazebo", "Ubuntu"],
+    technologies: [
+      "Python",
+      "C++",
+      "ROS",
+      "Nav2",
+      "Gazebo",
+      "Ubuntu",
+      "OpenCV",
+      "GStreamer",
+    ],
     link: "https://github.com/clubcapra/rove",
   },
   {
