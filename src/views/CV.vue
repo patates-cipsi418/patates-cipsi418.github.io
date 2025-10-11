@@ -68,16 +68,41 @@ function print() {
                 <a target="_blank" :href="school.link"> {{ school.name }} </a>,
                 {{ school.city }}
               </p>
-              <ul class="list">
-                <template v-for="(task, t) in school.tasks" v-bind:key="t">
-                  <li>
-                    {{ task.title }}
-                    <a v-if="task.link" target="_blank" :href="task.link">
-                      <FontAwesomeIcon :icon="faLink"
-                    /></a>
-                  </li>
-                </template>
-              </ul>
+              <div class="schools-tasks">
+                <ul class="list">
+                  <template
+                    v-for="(task, t) in school.tasks.slice(
+                      0,
+                      school.tasks.length / 2
+                    )"
+                    v-bind:key="t"
+                  >
+                    <li>
+                      {{ task.title }}
+                      <a v-if="task.link" target="_blank" :href="task.link">
+                        <FontAwesomeIcon :icon="faLink"
+                      /></a>
+                    </li>
+                  </template>
+                </ul>
+
+                <ul class="list">
+                  <template
+                    v-for="(task, t) in school.tasks.slice(
+                      school.tasks.length / 2,
+                      school.tasks.length
+                    )"
+                    v-bind:key="t"
+                  >
+                    <li>
+                      {{ task.title }}
+                      <a v-if="task.link" target="_blank" :href="task.link">
+                        <FontAwesomeIcon :icon="faLink"
+                      /></a>
+                    </li>
+                  </template>
+                </ul>
+              </div>
             </div>
           </template>
         </div>
@@ -200,10 +225,17 @@ function print() {
 
 /* sides */
 .small-side,
-.large-side {
+.large-side,
+.schools-tasks > .list {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.schools-tasks {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .paper hr {

@@ -20,7 +20,10 @@ export interface Profile {
 export const profile: Profile = {
   name: "DENIS TURK",
   description:
-    "Éutudiant travailleur et déterminer à obtenir des résultats partout où je travaille. J'ai pu accroitre l'efficacité de certains processus' à mon stage, comme l'entrée automatique de données dans un formulaire à partir d'un objet dans la base de données. En fait, les postes qui m'ont été attribués à mes emplois antérieurs et à mon stage m'ont permis de pratiquer mon autonomie, mon jugement et à m'adapter aux imprévus. Cependant, la coopération était autant importante pour le travail d'équipe. J'ai présentement un intérêt pour la robotique.",
+    "Étudiant travailleur et déterminé, je m’investis pleinement pour obtenir des résultats concrets dans chacun de mes projets. " +
+    "Passionné par la technologie et la programmation, j’ai eu l’occasion, au cours de mes expériences précédentes, de développer mes compétences en optimisant mon travail et en améliorant les processus en place. " +
+    "Les postes que j’ai occupés, tant lors de mes emplois que de mon stage, m’ont permis de renforcer mon autonomie, mon sens du jugement et ma capacité d’adaptation face aux imprévus. " +
+    "Par ailleurs, j’accorde une grande importance à la coopération et au travail d’équipe, essentiels à la réussite collective.",
   contacts: contacts,
   jobs: jobs,
   schools: schools,
