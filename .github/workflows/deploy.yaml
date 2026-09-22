@@ -3,8 +3,6 @@ name: Deploy static content
 on:
   push:
     branches: ["main"]
-  schedule:
-    - cron: "0 0 * * 1" # Runs every monday at midnight UTC
   workflow_dispatch: # Allows manual triggering
 
 permissions:
