@@ -12,6 +12,21 @@ export interface Job {
 
 export const jobs: Job[] = [
   {
+    title: "Cuisinier",
+    buisness: "Pub 100 génies",
+    link: "https://www.pub100genies.ca",
+    city: "Montréal, Qc",
+    type: "Temps partiel",
+    begin: "10/2025",
+    end: "Present",
+    show: true,
+    tasks: [
+      "Préparation des ingrédients pour le service.",
+      "Montage des plats selon les commandes.",
+      "Respect des normes d'hygiène et de sécurité alimentaire.",
+    ],
+  },
+  {
     title: "Programmeur en automatisation et robotique",
     buisness: "GE Aerospace Bromont",
     link: "https://gebromont.ca",
@@ -66,7 +81,7 @@ export const jobs: Job[] = [
     type: "Temps partiel",
     begin: "03/2021",
     end: "01/2023",
-    show: true,
+    show: false,
     tasks: [
       "Contrôle de l'inventaire pour répondre à la demande des clients.",
       "Disposition des produits dans le magasin.",

@@ -4,6 +4,7 @@ export interface Project {
   contribution?: string[];
   technologies: string[];
   link?: string;
+  show: boolean;
 }
 export const projects: Project[] = [
   {
@@ -12,6 +13,7 @@ export const projects: Project[] = [
       "Site web personnel pour présenter mes compétences et mes projets.",
     technologies: ["TypeScript", "Vue"],
     link: "",
+    show: true,
   },
   {
     name: "Control Board",
@@ -20,6 +22,7 @@ export const projects: Project[] = [
     contribution: ["Programmation de la carte."],
     technologies: ["C++", "Arduino", "CAN Bus"],
     link: "https://github.com/clubcapra/control_board",
+    show: true,
   },
   {
     name: "Outil de configuration de ODrive",
@@ -31,6 +34,7 @@ export const projects: Project[] = [
     ],
     technologies: ["Python", "CAN Bus", "ODrive"],
     link: "https://github.com/clubcapra/odrive-config",
+    show: true,
   },
   {
     name: "Rove",
@@ -54,6 +58,7 @@ export const projects: Project[] = [
       "GStreamer",
     ],
     link: "https://github.com/clubcapra/rove",
+    show: true,
   },
   {
     name: "Radiacode 103",
@@ -63,5 +68,6 @@ export const projects: Project[] = [
     ],
     technologies: ["Python", "ROS", "Ubuntu"],
     link: "https://github.com/clubcapra/radiacode_driver",
+    show: true,
   },
 ];

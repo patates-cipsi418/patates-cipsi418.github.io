@@ -22,6 +22,7 @@ export const skillGroups: SkillGroup[] = [
       "Entity Framework Core",
       "VueJS / Vuetify",
       "WPF MVVM",
+      "PlatformIO",
     ],
   },
   {
@@ -41,6 +42,6 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: "Méthode",
-    skills: ["Agile", "Scrum", "DevOps"],
+    skills: ["Agile, Scrum", "DevOps"],
   },
 ];

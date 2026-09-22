@@ -73,7 +73,7 @@ function print() {
                   <template
                     v-for="(task, t) in school.tasks.slice(
                       0,
-                      school.tasks.length / 2
+                      school.tasks.length / 2,
                     )"
                     v-bind:key="t"
                   >
@@ -90,7 +90,7 @@ function print() {
                   <template
                     v-for="(task, t) in school.tasks.slice(
                       school.tasks.length / 2,
-                      school.tasks.length
+                      school.tasks.length,
                     )"
                     v-bind:key="t"
                   >
@@ -181,6 +181,59 @@ function print() {
         </div>
       </div>
     </div>
+    <div class="paper">
+      <!-- <div class="small-side"></div> -->
+      <div class="large-side">
+        <div class="section">
+          <h4>IMPLICATIONS</h4>
+          <hr />
+          
+          <template v-for="(implication, j) in profile.implications" v-bind:key="j">
+            <div v-if="implication.show" class="list-container">
+              <p>
+                <span class="list-title">{{ implication.title }}</span>
+                ,
+                <span> {{ implication.begin }} - {{ implication.end }} </span>
+              </p>
+              <p class="job-description">
+                <a target="_blank" :href="implication.link"> {{ implication.club }} </a>,
+                {{ implication.type }}
+              </p>
+              <ul class="list">
+                <template v-for="(task, t) in implication.tasks" v-bind:key="t">
+                  <li>{{ task }}</li>
+                </template>
+              </ul>
+            </div>
+          </template>
+        </div>
+        <div class="section">
+          <h4>Projets notables</h4>
+          <hr />
+          <template v-for="(project, j) in profile.projects" v-bind:key="j">
+            <div v-if="project.show" class="list-container">
+              <p>
+                <a class="list-title" :href="project.link" target="_blank">
+                  {{ project.name }}
+                </a>
+              </p>
+              <p class="job-description">
+                {{ project.description }}
+              </p>
+              <p class="job-description">
+                <span class="underline">Technologies utilisées</span> :
+                {{ project.technologies.join(", ") }}
+              </p>
+              <ul class="list">
+                <template v-for="(contribution, t) in project.contribution" v-bind:key="t">
+                  <li>{{ contribution }}</li>
+                </template>
+              </ul>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
   </v-container>
 </template>
 
@@ -221,6 +274,10 @@ function print() {
   margin-right: auto !important;
   padding: 0px 0px 0px 0px;
   font-size: 12px;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 /* sides */

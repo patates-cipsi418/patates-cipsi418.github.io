@@ -3,6 +3,7 @@ import { Job, jobs } from "./job";
 import { School, schools } from "./school";
 import { SkillGroup, skillGroups } from "./skillGroup";
 import { Implication, implications } from "./implication";
+import { Project, projects } from "./projects";
 
 export interface Profile {
   name: string;
@@ -15,6 +16,7 @@ export interface Profile {
   skillGroups: SkillGroup[];
   interests: string[];
   languages: string[];
+  projects: Project[];
 }
 
 export const profile: Profile = {
@@ -39,4 +41,5 @@ export const profile: Profile = {
   implications: implications,
   interests: ["Jeux Vidéo", "Cuisine", "Montage", "Programmation"],
   languages: ["Français", "Anglais"],
+  projects: projects,
 };
