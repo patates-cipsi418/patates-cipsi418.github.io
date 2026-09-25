@@ -23,11 +23,11 @@ export const implications: Implication[] = [
       "Maintenance d'imprimantes 3D et de stations de soudure",
       "Conception 3D et impression de pièces esthétiques et fonctionnelles",
       "Programmation de microcontrôleurs",
-      "Gestion d'équipe et de projet"
+      "Gestion de projet/équipe"
     ],
   },
   { 
-    title: "Responsable communication (Crieur publique)",
+    title: "Responsable communication (Crieur public)",
     club: "Fraternité du Piranha", 
     link: "https://www.fraternitedupiranha.com", 
     type: "club étudiant", 
@@ -37,7 +37,7 @@ export const implications: Implication[] = [
     tasks: [
       "Communication et organisation d'événements",
       "Promotion de l'implication étudiante",
-      "Nourir des piranhas",
+      "Nourrir des piranhas",
     ] 
   },
   {

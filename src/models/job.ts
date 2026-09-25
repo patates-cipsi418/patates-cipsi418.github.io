@@ -55,7 +55,7 @@ export const jobs: Job[] = [
       "Conception de services web et d'applications de bureau",
       "Intégration standard d'outils de mesures",
       "Recherche et développement de solutions de communication",
-      "Développemnt d'une application web",
+      "Développement d'une application web",
     ],
   },
   {
