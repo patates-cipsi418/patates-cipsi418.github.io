@@ -28,7 +28,7 @@ export const jobs: Job[] = [
   },
   {
     title: "Programmeur en automatisation et robotique",
-    buisness: "GE Aerospace Bromont",
+    buisness: "GE Aérospatial Bromont",
     link: "https://gebromont.ca",
     city: "Bromont, Qc",
     type: "Stage",
@@ -44,7 +44,7 @@ export const jobs: Job[] = [
   },
   {
     title: "Programmeur en automatisation et robotique",
-    buisness: "GE Aerospace Bromont",
+    buisness: "GE Aérospatial Bromont",
     link: "https://gebromont.ca",
     city: "Bromont, Qc",
     type: "Stage",
